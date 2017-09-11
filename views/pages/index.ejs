@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div id="button"></div>
+  <div id="container"></div>
+
+  <script src="https://unpkg.com/react@15/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+  <script src="https://unpkg.com/react-router/umd/react-router.min.js"></script>
+  <script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.min.js"></script>
+
+  <script type="text/babel">
+
+  var userClassName = "user-info";
+  var styleObj = {
+      color:'blue',
+      textAlign:'center',
+      fontFamily:'Verdana',
+  };
+  var styleObjbut = {
+      display:'block',
+      padding:'7px',
+      background:'blue',
+      color:'white',
+      width:'75px',
+      textAlign:'centre',
+      fontFamily:'Verdana',
+      textDecoration:'none',
+      fontWeight: 'bold',
+  };
+
+  ReactDOM.render(
+    <h1 className={userClassName}  style={styleObj}>Заголовок!</h1>,
+    document.getElementById("header")
+  );
+
+  const Router = ReactRouterDOM.BrowserRouter;
+  const Route = ReactRouterDOM.Route;
+  const Switch = ReactRouterDOM.Switch;
+  const NavLink = ReactRouterDOM.NavLink;
+
+  class Home extends React.Component{
+      render(){
+          return <h2>Это компонент меню "Главная"</h2>;
+      }
+  }
+  class About extends React.Component{
+      render(){
+          return <h2>Это компонент меню "О сайте"</h2>;
+      }
+  }
+  class NotFound extends React.Component{
+      render(){
+          return <h2>Ресурс не найден</h2>;
+      }
+  }
+  class Contacts extends React.Component{
+      render(){
+          return  <h2>Это компонент меню "Контакты"</h2>;
+      }
+  }
+  class Nav extends React.Component{
+      render(){
+          return <ul>
+              <li><NavLink exact to="/" activeClassName="active" className="name">Главная</NavLink></li>
+              <li><NavLink to="/about" activeClassName="active" className="name">О сайте</NavLink></li>
+              <li><NavLink to="/contacts" activeClassName="active" className="name">Контакты</NavLink></li>
+          </ul>;
+      }
+  }
+  ReactDOM.render(
+      <Router>
+          <div>
+              <Nav />
+              <Switch>
+                  <Route exact path="/" component={Home} />
+                  <Route path="/about" component={About} />
+                  <Route path="/contacts" component={Contacts} />
+                  <Route component={NotFound} />
+              </Switch>
+          </div>
+      </Router>,
+      document.getElementById("container")
+  )
+
+
+
+
+  </script>
+</body>
+</html>

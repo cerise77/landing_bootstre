@@ -1,0 +1,41 @@
+{
+  "name": "piston",
+  "version": "1.0.0",
+  "description": "Piston",
+  "engines": {
+    "node": "7.10.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "^4.13.3"
+  },
+  "babel": {
+    "presets": [
+      "latest",
+      "react",
+      "stage-0"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "lite-server": "^2.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cerise77/piston"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "cerise",
+  "license": "MIT"
+}
