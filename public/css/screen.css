@@ -1752,6 +1752,26 @@ header {
   color: #000;
   text-align: left;
 }
+.bottom-l p {
+  margin: 20px 0 23px;
+  text-align: left;
+  font-size: 14px;
+	color: #000;
+}
+.bottom-l .media-bodyy h4 {
+  margin: 10px 0 0;
+  /*margin: 65px 0 30px;*/
+	font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+}
+.bottom-l .media-bodyy p {
+  margin: 20px 0 23px;
+  text-align: left;
+  font-size: 14px;
+	color: #fff;
+}
 .bottom-l .media-left .media-object {
   width: 100px;
 }
@@ -1761,7 +1781,7 @@ header {
 .bottom-l .media-left .media-body{
   width: 40%;
 }
-.bottom-l #media-l {
+.bottom-l #media-ll {
   padding: 20px;
   background: #f7921e;
 }
