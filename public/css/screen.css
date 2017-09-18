@@ -816,7 +816,7 @@ header {
 
 .middle-c .col-6-n {
   width: 48%;
-  padding: 127px 30px 10px;
+  padding: 123px 30px 10px;
   position: relative;
   text-align: center;
   background: url('img/phot7.jpg') no-repeat;
@@ -1079,7 +1079,7 @@ header {
 .middle-p h4 {
   margin: 10px 0 0;
   /*margin: 65px 0 30px;*/
-	font-size: 24px;
+	font-size: 21px;
   font-weight: 600;
   color: #000;
   text-align: left;
