@@ -1958,7 +1958,7 @@ header {
   color: #000;
   text-align: left;
 }
-.bottom-g .media-left .media-object {
+.bottom-g .media-centre .media-object {
   width: 30px;
 }
 .bottom-d .media-left a img{
@@ -1975,7 +1975,7 @@ header {
 	color: #fff;
 }
 .bottom-g #media-bodyy {
-	color: #0;
+	color: #000;
 }
 .bottom-d #media-m {
   padding: 20px;
