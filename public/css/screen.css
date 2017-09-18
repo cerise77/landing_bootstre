@@ -1979,13 +1979,21 @@ header {
   margin: 10px 0 13px;
   text-align: left;
   font-size: 14px;
+	color: #000;
+}
+.bottom-g .media-body p {
+  margin: 10px 0 13px;
+  text-align: left;
+  font-size: 14px;
+	color: #fff;
 }
 .bottom-g a.orst {
   /*display: block;
   margin-bottom: 10px;*/
-  background: #f7921e;
-  border: solid 1px #f7921e;
-  color: #fff;
+  /*background: #f7921e;*/
+	background: #fff;
+  /*border: solid 1px #f7921e;*/
+  color: #f7921e;
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
@@ -1994,6 +2002,23 @@ header {
   border-radius: 15px;
 }
 .bottom-g a.orst:hover {
+  background: #fcd3a3;
+  text-decoration: none;
+  color: #fff;
+}
+.bottom-g a.orst1 {
+  /*display: block;
+  margin-bottom: 10px;*/
+  background: #f7921e;
+  color: #f7921e;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  width: 150px;
+  border-radius: 15px;
+}
+.bottom-g a.orst1:hover {
   background: #fcd3a3;
   text-decoration: none;
   color: #fff;
