@@ -1980,7 +1980,7 @@ header {
   text-align: left;
   font-size: 14px;
 }
-.bottom-g a {
+.bottom-g a.orst {
   /*display: block;
   margin-bottom: 10px;*/
   background: #f7921e;
@@ -1993,7 +1993,7 @@ header {
   width: 150px;
   border-radius: 15px;
 }
-.bottom-g a:hover {
+.bottom-g a.orst:hover {
   background: #fcd3a3;
   text-decoration: none;
   color: #fff;
