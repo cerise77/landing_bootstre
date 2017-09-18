@@ -922,6 +922,14 @@ header {
     margin: 0;
     vertical-align: top;
   }
+	.middle-c .col-6-p ol.mid > li:first-child {
+	  width: 20%;
+	}
+	.middle-c .col-6-p ol.mid > li {
+	  display: inline-block;
+	  margin-right: 14px;
+	  width: 10%;
+	}
 
 }
 @media screen and (max-width: 451px) {
