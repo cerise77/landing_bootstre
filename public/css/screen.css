@@ -1878,6 +1878,14 @@ header {
   color: #000;
   text-align: left;
 }
+.bottom-d h3 {
+  margin: 10px 0 0;
+  /*margin: 65px 0 30px;*/
+	font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  text-align: left;
+}
 .bottom-d .media-left .media-object {
   width: 70px;
 }
